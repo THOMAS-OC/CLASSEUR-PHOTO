@@ -1,0 +1,26 @@
+{
+  "name": "classeur-photo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THOMAS-OC/CLASSEUR-PHOTO.git"
+  },
+  "author": "Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THOMAS-OC/CLASSEUR-PHOTO/issues"
+  },
+  "homepage": "https://github.com/THOMAS-OC/CLASSEUR-PHOTO#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "mongoose": "^6.4.1",
+    "nodemon": "^2.0.18"
+  }
+}

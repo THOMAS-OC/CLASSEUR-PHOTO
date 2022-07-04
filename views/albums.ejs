@@ -1,0 +1,22 @@
+<%- include('partials/head')  %>
+
+    <a href="/new-album">Créer un album</a>
+
+    <h2> Mes albums </h2>
+    <section class="albums">
+
+
+        <% for( let index = 0; index < albums.length; index++ ) { %>
+            
+            <a href="/album/<%= albums[index]._id  %>" class="albumItem <%= albums[index].title  %>">
+
+                    <h3> <%= albums[index].title  %> </h3>
+
+            </a>
+        <% } %>
+
+        
+    </section>
+
+<%- include('partials/foot')  %>
+

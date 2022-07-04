@@ -1,0 +1,26 @@
+<%- include('partials/head')  %>
+
+<h1> Voici l'album <%= albumSelected.title  %>  </h1>
+
+<section class="viewAlbum">
+
+    <% for( let index = 0; index < albumSelected.images.length; index++ ) { %>
+
+        <div>
+            <img src="/<%= albumSelected.id  %>/<%= albumSelected.images[index] %> " alt="test">
+            <a download="arty_insect" href="/<%= albumSelected.id  %>/<%= albumSelected.images[index] %> ">Télécharger l'image</a>
+        </div>
+
+    <% } %>
+
+
+
+</section>
+
+<form enctype="multipart/form-data" method="post" action="/album/<%= albumSelected._id  %>/NewImage">
+    <input type="file" name="image" id="">
+    <input type="submit" value="Ajouter">
+</form>
+
+<%- include('partials/foot')  %>
+

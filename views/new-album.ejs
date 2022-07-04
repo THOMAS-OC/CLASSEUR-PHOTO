@@ -1,0 +1,11 @@
+<%- include('partials/head')  %> 
+<script defer src="scriptForm.js"></script>
+
+<h2>Nouvel album</h2>
+
+<form action="/album/create" method="POST">
+    <input class="created" required placeholder="titre de l'album" type="text" name="albumTitle" id="nom" autofocus>
+    <input type="submit" value="Créer">
+</form>
+
+<%- include('partials/foot')  %>
